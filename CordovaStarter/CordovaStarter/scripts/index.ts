@@ -14,11 +14,6 @@ module CordovaStarter {
             // Verarbeiten der Cordova-Pause- und -Fortsetzenereignisse
             document.addEventListener('pause', onPause, false);
             document.addEventListener('resume', onResume, false);
-
-            // TODO: Cordova wurde geladen. Führen Sie hier eine Initialisierung aus, die Cordova erfordert.
-            var element = document.getElementById("deviceready");
-            element.innerHTML = 'Device Ready';
-            element.className += ' ready';
         }
 
         function onPause() {
