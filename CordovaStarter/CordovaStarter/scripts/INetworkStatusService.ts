@@ -1,0 +1,3 @@
+﻿interface INetworkStatusService {
+    deviceIsOnline: boolean;
+}
