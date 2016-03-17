@@ -2,3 +2,8 @@
 var cordovaStarter = angular.module("cordovaStarter", ["ngMaterial"]);
 
 cordovaStarter.controller("IndexController", IndexController);
+
+function networkStatusFactory() {
+    return new NetworkStatusService();
+}
+cordovaStarter.factory("cordovaStarter.NetworkStatusService", networkStatusFactory);
