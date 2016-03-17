@@ -15,7 +15,7 @@
     <link href="css/index.css" rel="stylesheet" />
     <link href="scripts/lib/angular-material/angular-material.css" rel="stylesheet" />
 </head>
-<body layout="column">
+<body>
     <div ng-app="cordovaStarter" layout="column">
         <md-toolbar>
             <div class="md-toolbar-tools">
@@ -25,6 +25,9 @@
                 <span flex></span>
             </div>
         </md-toolbar>
+        <md-content layout="column">
+            <md-button class="md-raised md-primary">Show Network Status</md-button>
+        </md-content>
     </div>
     <!-- Cordova-Verweis, wird Ihrer App beim Erstellen hinzugefügt. -->
     <script src="cordova.js"></script>
