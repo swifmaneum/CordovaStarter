@@ -6,6 +6,10 @@
     }
 
     showNetworkStatus(): void {
-        alert("???");
+        if (this.networkStatusService.deviceIsOnline) {
+            alert("Online");
+        } else {
+            alert("OfFline");
+        }
     }
 }
